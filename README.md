@@ -38,9 +38,6 @@ Basic logic functions built with only diodes, resistors, push buttons and LEDs (
 - Diodes alone cannot invert a signal. In the NOR and NAND circuits the inversion is achieved by wiring the LED to +5 V so it lights when the node is LOW. This is a known limitation of diode logic.
 - In the NAND circuit, with both pull resistors at 1 kΩ the LED only dimmed instead of turning off. A voltage divider keeps the node near 3 V, which still lets a small current flow through the LED. Lowering the pull-up resistor to 220 Ω raised the node voltage and the LED turned off.
 
-![OR gate in Proteus](part1-diode-logic-gates/images/or-proteus.png)
-![All four gates in Proteus](part1-diode-logic-gates/images/gates-proteus.png)
-![Breadboard build](part1-diode-logic-gates/images/gates-breadboard.png)
 
 ---
 
@@ -77,8 +74,7 @@ The 7812 needs roughly 14 V at its input (about 2 V dropout), so the filtered vo
 - The two primary leads are thin, bare wires that carry mains voltage, so they cannot go on a breadboard. See the report for how the connection was made.
 - Regulator pin order was checked before wiring (78xx, printed face toward you, legs down: input, ground, output).
 
-![Power supply in Proteus](part2-power-supply/images/supply-proteus.png)
-![Power supply on breadboard](part2-power-supply/images/supply-breadboard.png)
+
 
 > **Safety:** Part 2 involves 220 V mains on the transformer primary. If you build it, insulate every mains connection, keep the mains side off the breadboard, disconnect power before any change, and have someone experienced check the wiring first. Check electrolytic capacitor polarity before powering on.
 
